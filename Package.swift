@@ -23,7 +23,7 @@ let package = Package(
                     .copy("Resources/PrivacyInfo.xcprivacy")
                 ]),
         .testTarget(name: "PhoneNumberKitTests",
-                    dependencies: ["PhoneNumberKit"],
+                    dependencies: ["GSKPhoneNumberKit"],
                     path: "PhoneNumberKitTests",
                     exclude: ["Info.plist"])
     ]
