@@ -7,12 +7,12 @@ let package = Package(
         .iOS(.v12), .macOS(.v10_13), .tvOS(.v12), .watchOS(.v4)
     ],
     products: [
-        .library(name: "PhoneNumberKit", targets: ["PhoneNumberKit"]),
-        .library(name: "PhoneNumberKit-Static", type: .static, targets: ["PhoneNumberKit"]),
-        .library(name: "PhoneNumberKit-Dynamic", type: .dynamic, targets: ["PhoneNumberKit"])
+        .library(name: "PhoneNumberKit", targets: ["GSKPhoneNumberKit"]),
+        .library(name: "PhoneNumberKit-Static", type: .static, targets: ["GSKPhoneNumberKit"]),
+        .library(name: "PhoneNumberKit-Dynamic", type: .dynamic, targets: ["GSKPhoneNumberKit"])
     ],
     targets: [
-        .target(name: "PhoneNumberKit",
+        .target(name: "GSKPhoneNumberKit",
                 path: "PhoneNumberKit",
                 exclude: ["Resources/Original",
                           "Resources/README.md",
